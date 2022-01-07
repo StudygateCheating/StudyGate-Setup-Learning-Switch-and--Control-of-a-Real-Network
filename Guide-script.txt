@@ -1,0 +1,23 @@
+
+Project audio script
+---------------------
+
+	Introduction
+	-------------
+	
+	Virtualized systems and Software-defined networking protocols and standards have made it possible for simplified
+	information sharing and control for communication in various entities from private, public, snall scale to large
+	scale entities. 
+	Using the SDN standards and OpenFlow(OF) protocols have necessitated control of network parameters from both controls,
+	switches to routes and hubs be easily controlled programmatically using special instructions commands designed using
+	various user friendly programming languages e. Java, Python, Ruby etc. 
+	This has made it possible to as well design well formulated interfaces for network administraters management
+	e.g POX control tool designed in Python provides interfaces for network configuration setting and control 
+	summaries for easier management and control of network.
+	Mininet tool provides virtualization for networks both in real machines and virtualized environment hence ease of 
+	network provisioning for organizations and businesses. These collectively provides the following significance
+	in network technology
+	1) Improbed innovation and connectivity
+	2) Improved network policy management
+	3) Simplified network configuration and provisioning
+	4) Automated control tools makes network monitoring more simplified

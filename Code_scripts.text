@@ -1,0 +1,87 @@
+
+Network setup commands
+----------------------
+To get things up and running finds here below are the procedural guide
+commands
+	
+1) Mininet
+
+  1.1) Installation
+   - This is our network emulator tool we'll be using
+   - To use it you can install it in a virtualized environment 
+     on a VM or just a real machine. Use the commands below
+   - Clone the git repository for minimap as shown
+   
+     	git clone git://github.com/mininet/mininet
+     		
+    - In the directory where we've cloned the repository, open it in the terminal then
+    
+    	cd mininet/util
+    	
+    - This takes us to the "util" directory. 
+    - Therefore to get the mininet tool installed run the command
+    
+    	sudo ./install.sh -a
+    	
+    - This will prompt for root password. Enter the password to initiate installation
+    
+    - Alternatively the above can be executed in linux supported systems using the command
+    
+    	sudo apt install -y mininet
+
+  1.2) Testing mininet
+  	-To set up the network properies use the command
+  	
+  		sudo mn --switch ovsbr --test pingall
+  		
+  	- Enter the password when prompted and then the tool will automatically create the network
+  	  together with the controllers and set the switches and links.	
+  		
+  1.3) Starting the mininet
+  	- Use the command below to initiate the mininet tool console
+  	
+  		sudo mn --topo single,3 --mac –switch ovsk --controller remote
+  		
+  	- This results in the creation of the various network parameters which include;
+  	      - 3 virtual hosts
+  	      - openflow switch
+  	      - set MAC address and configure the switch
+  		
+  		
+2) Create a Learning Switch
+   - Here we will use a controller platform of python based language POX.
+   - Always comes packaged with mininet tool. If not available
+   
+  2.1) Installation
+  	- Clone the git repo using the command
+  	
+  		$ git clone http://github.com/noxrepo/pox
+  
+  	- Run the test sample using the basic command
+  	
+  		$./pox.py log.level --DEBUG misc.of_tutorial
+  	
+  	- This sets up the local server access and ports
+	
+
+
+  2.2) Verify controller reachability
+  
+  	- In the mininet console environment
+  	
+  		mininet> pingall
+
+	- Checks network connectivity sanity
+
+
+
+
+
+
+
+  		
+  		
+  		
+  		
+  		
+  		
